@@ -5,9 +5,9 @@ import {
   SearchIcon,
   LibraryIcon,
   PlusCircleIcon,
-  HeartIcon,
   RssIcon,
 } from '@heroicons/react/outline';
+import { HeartIcon } from '@heroicons/react/solid';
 import useSpotify from '../hooks/useSpotify';
 import { useRecoilState } from 'recoil';
 import { playlistIdState } from '../atoms/playlistAtom';
@@ -51,11 +51,11 @@ function Sidebar() {
           <PlusCircleIcon className="h-5 w-5" />
           <p>Create Playlist</p>
         </button>
-        <button className="flex items-center space-x-2 hover:text-white font-medium">
+        <button className="flex items-center space-x-2 hover:text-white font-medium text-blue-500">
           <HeartIcon className="h-5 w-5" />
           <p>Liked Songs</p>
         </button>
-        <button className="flex items-center space-x-2 hover:text-white font-medium">
+        <button className="flex items-center space-x-2 hover:text-white font-medium text-green-500">
           <RssIcon className="h-5 w-5" />
           <p>Your Episodes</p>
         </button>
